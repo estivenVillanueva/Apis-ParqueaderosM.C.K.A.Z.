@@ -1,5 +1,5 @@
-com\parking\controller\VehicleController.class
 com\parking\model\Vehicle.class
 com\parking\service\VehicleService.class
 com\parking\repository\VehicleRepository.class
 com\parking\ParkingSystemApplication.class
+com\parking\controller\VehicleController.class

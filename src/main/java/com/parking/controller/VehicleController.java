@@ -16,32 +16,39 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/vehicles")
 @CrossOrigin(origins = "*")
-@Tag(name = "Vehicle Management", description = "APIs for managing vehicle registration in parking system")
+@Tag(name = "Gestión de Vehículos", description = "API para la gestión de entrada y salida de vehículos del parqueadero")
 public class VehicleController {
 
     @Autowired
     private VehicleService vehicleService;
 
     @PostMapping("/entry")
-    @Operation(summary = "Register vehicle entry", description = "Registers a new vehicle entry into the parking system")
+    @Operation(
+        summary = "Registrar entrada de vehículo", 
+        description = "Registra la entrada de un nuevo vehículo al parqueadero"
+    )
     @ApiResponses(value = {
-        @ApiResponse(responseCode = "200", description = "Vehicle entry registered successfully"),
-        @ApiResponse(responseCode = "400", description = "Invalid input")
+        @ApiResponse(responseCode = "200", description = "Vehículo registrado exitosamente"),
+        @ApiResponse(responseCode = "400", description = "Datos de entrada inválidos"),
+        @ApiResponse(responseCode = "409", description = "El vehículo ya está registrado en el parqueadero")
     })
     public ResponseEntity<Vehicle> registerEntry(
-        @Parameter(description = "License plate of the vehicle", required = true)
+        @Parameter(description = "Placa del vehículo (ejemplo: ABC123)", required = true)
         @RequestParam String licensePlate) {
         return ResponseEntity.ok(vehicleService.registerEntry(licensePlate));
     }
 
     @PostMapping("/exit")
-    @Operation(summary = "Register vehicle exit", description = "Registers a vehicle exit from the parking system")
+    @Operation(
+        summary = "Registrar salida de vehículo", 
+        description = "Registra la salida de un vehículo del parqueadero"
+    )
     @ApiResponses(value = {
-        @ApiResponse(responseCode = "200", description = "Vehicle exit registered successfully"),
-        @ApiResponse(responseCode = "404", description = "Vehicle not found or already exited")
+        @ApiResponse(responseCode = "200", description = "Salida registrada exitosamente"),
+        @ApiResponse(responseCode = "404", description = "Vehículo no encontrado o ya ha salido")
     })
     public ResponseEntity<Vehicle> registerExit(
-        @Parameter(description = "License plate of the vehicle", required = true)
+        @Parameter(description = "Placa del vehículo (ejemplo: ABC123)", required = true)
         @RequestParam String licensePlate) {
         Vehicle vehicle = vehicleService.registerExit(licensePlate);
         if (vehicle != null) {
@@ -51,19 +58,25 @@ public class VehicleController {
     }
 
     @GetMapping
-    @Operation(summary = "Get all vehicles", description = "Retrieves all vehicles registered in the system")
+    @Operation(
+        summary = "Listar todos los vehículos", 
+        description = "Obtiene el registro histórico de todos los vehículos"
+    )
     public ResponseEntity<List<Vehicle>> getAllVehicles() {
         return ResponseEntity.ok(vehicleService.getAllVehicles());
     }
 
     @GetMapping("/{licensePlate}")
-    @Operation(summary = "Get vehicle by license plate", description = "Retrieves a specific vehicle by its license plate")
+    @Operation(
+        summary = "Buscar vehículo por placa", 
+        description = "Obtiene la información de un vehículo específico por su placa"
+    )
     @ApiResponses(value = {
-        @ApiResponse(responseCode = "200", description = "Vehicle found"),
-        @ApiResponse(responseCode = "404", description = "Vehicle not found")
+        @ApiResponse(responseCode = "200", description = "Vehículo encontrado"),
+        @ApiResponse(responseCode = "404", description = "Vehículo no encontrado")
     })
     public ResponseEntity<Vehicle> getVehicleByLicensePlate(
-        @Parameter(description = "License plate of the vehicle", required = true)
+        @Parameter(description = "Placa del vehículo a buscar", required = true)
         @PathVariable String licensePlate) {
         Vehicle vehicle = vehicleService.getVehicleByLicensePlate(licensePlate);
         if (vehicle != null) {
@@ -73,7 +86,10 @@ public class VehicleController {
     }
 
     @GetMapping("/parked")
-    @Operation(summary = "Get currently parked vehicles", description = "Retrieves all vehicles currently parked in the system")
+    @Operation(
+        summary = "Listar vehículos estacionados", 
+        description = "Obtiene la lista de vehículos que actualmente están en el parqueadero"
+    )
     public ResponseEntity<List<Vehicle>> getCurrentlyParkedVehicles() {
         return ResponseEntity.ok(vehicleService.getCurrentlyParkedVehicles());
     }
