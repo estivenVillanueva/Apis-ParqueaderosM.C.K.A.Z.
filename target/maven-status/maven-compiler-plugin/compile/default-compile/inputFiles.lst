@@ -2,6 +2,7 @@ C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\repo
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\repository\VehicleRepository.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\controller\ParqueaderoController.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\controller\VehicleController.java
+C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\repository\PagoVehiculoRepository.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\service\AdministratorService.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\service\ClienteService.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\controller\AdministratorController.java
@@ -9,7 +10,11 @@ C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\serv
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\controller\ClienteController.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\service\ParqueaderoService.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\model\Administrator.java
+C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\model\PagoVehiculo.java
+C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\service\PagoVehiculoService.java
+C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\model\Vehiculo.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\repository\ParqueaderoRepository.java
+C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\controller\PagoVehiculoController.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\model\Cliente.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\ParkingSystemApplication.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\repository\AdministratorRepository.java
