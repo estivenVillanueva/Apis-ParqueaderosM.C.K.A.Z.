@@ -1,12 +1,16 @@
+C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\repository\ClienteRepository.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\repository\VehicleRepository.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\controller\ParqueaderoController.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\controller\VehicleController.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\service\AdministratorService.java
+C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\service\ClienteService.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\controller\AdministratorController.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\service\VehicleService.java
+C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\controller\ClienteController.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\service\ParqueaderoService.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\model\Administrator.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\repository\ParqueaderoRepository.java
+C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\model\Cliente.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\ParkingSystemApplication.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\repository\AdministratorRepository.java
 C:\Users\SENA\Desktop\Apis-Parqueaderos-M.C.K.A.Z\src\main\java\com\parking\model\Parqueadero.java
